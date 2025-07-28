@@ -1,7 +1,6 @@
 
 
 import Header from "@/components/Header"
-import Footer from "@/components/Footer";
 import React, { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -502,8 +501,9 @@ export default function TripPlanner() {
                     <p className="text-gray-600 text-sm leading-relaxed mb-10">
                       Talk to a certified travel expert for personalized planning and booking assistance.
                     </p>
-                    <Button class onClick={() => console.log("Voice agent widget triggered")}>
-                      
+                    <Button className="bg-gradient-to-r from-orange-500 to-yellow-500 text-white" onClick={() => console.log("Voice agent widget triggered")}>
+                      <Phone className="mr-2 h-4 w-4" />
+                      Talk to Expert
                     </Button>
                   </div>
                 </div>
